@@ -54,7 +54,7 @@
             this.helpProvider1.SetShowHelp(this.Versao, true);
             this.Versao.Size = new System.Drawing.Size(334, 13);
             this.Versao.TabIndex = 34;
-            this.Versao.Text = "Versão 1.2 (1.2.1) - 08/12/2017 -  EPROM 8.6 OU 9.6 - 29/08/2017 ";
+            this.Versao.Text = "Versão 1.2 (1.2.2) - 24/01/2018 -  EPROM 8.6 OU 9.6 - 29/08/2017 ";
             // 
             // label9
             // 
@@ -74,7 +74,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 12);
             this.label1.TabIndex = 32;
-            this.label1.Text = "2017 - Digisystem Indústria de Sistemas Eletrônicos Ltda ";
+            this.label1.Text = "2018 - Digisystem Indústria de Sistemas Eletrônicos Ltda ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label8
