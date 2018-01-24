@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEAB7D3B-E41D-443D-BFE8-B9CB54F40F72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRG08</RootNamespace>
+    <AssemblyName>CRG08</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>teste.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DMC2051G\Digisystem.DMC2051g\Digisystem.DMC2051g.WF\bin\Release\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\ConexaoBO.cs" />
+    <Compile Include="BO\ErrorHandler.cs" />
+    <Compile Include="BO\PendriveBO.cs" />
+    <Compile Include="BO\SecagensBO.cs" />
+    <Compile Include="Dao\BackupDAO.cs" />
+    <Compile Include="Dao\CicloDAO.cs" />
+    <Compile Include="Dao\ConfiguracaoDAO.cs" />
+    <Compile Include="Dao\EmpresaCicloDAO.cs" />
+    <Compile Include="Dao\EmpresaDAO.cs" />
+    <Compile Include="Dao\LeiturasCicloDAO.cs" />
+    <Compile Include="Dao\LeiturasTratDAO.cs" />
+    <Compile Include="Dao\LogErroDAO.cs" />
+    <Compile Include="Dao\LogMudancaDAO.cs" />
+    <Compile Include="Dao\ProdutoCicloDAO.cs" />
+    <Compile Include="Dao\ProdutoDAO.cs" />
+    <Compile Include="Dao\UltimosDAO.cs" />
+    <Compile Include="Dao\UnidadeDAO.cs" />
+    <Compile Include="Dao\Utils.cs" />
+    <Compile Include="DataMigration\Migration.cs" />
+    <Compile Include="DataMigration\Utils.cs" />
+    <Compile Include="DataSetGeral.cs">
+      <DependentUpon>DataSetGeral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetGeral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGeral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Util\Converters.cs" />
+    <Compile Include="View\AdicionarCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdicionarCiclo.Designer.cs">
+      <DependentUpon>AdicionarCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Filtro.Designer.cs">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormularioEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormularioEmail.Designer.cs">
+      <DependentUpon>FormularioEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmConfiguracoesRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmConfiguracoesRelatorio.Designer.cs">
+      <DependentUpon>frmConfiguracoesRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPendriveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPendriveList.Designer.cs">
+      <DependentUpon>frmPendriveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSelecionarMeioComunicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSelecionarMeioComunicacao.Designer.cs">
+      <DependentUpon>frmSelecionarMeioComunicacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelGeral.Designer.cs">
+      <DependentUpon>RelGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Crypto.cs" />
+    <Compile Include="Util\DAO.cs" />
+    <Compile Include="View\Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastroGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CadastroGenerico.Designer.cs">
+      <DependentUpon>CadastroGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Carregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Carregar.Designer.cs">
+      <DependentUpon>Carregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ciclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ciclos.Designer.cs">
+      <DependentUpon>Ciclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConfiguracoesGerais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConfiguracoesGerais.Designer.cs">
+      <DependentUpon>ConfiguracoesGerais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetalhesCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DetalhesCiclo.Designer.cs">
+      <DependentUpon>DetalhesCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetalhesProdutosCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DetalhesProdutosCiclo.Designer.cs">
+      <DependentUpon>DetalhesProdutosCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Empresa.Designer.cs">
+      <DependentUpon>Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Grafico.Designer.cs">
+      <DependentUpon>Grafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Informacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Informacoes.Designer.cs">
+      <DependentUpon>Informacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Historico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Historico.Designer.cs">
+      <DependentUpon>Historico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ImportarExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ImportarExportar.Designer.cs">
+      <DependentUpon>ImportarExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Legenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Legenda.Designer.cs">
+      <DependentUpon>Legenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogErro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LogErro.Designer.cs">
+      <DependentUpon>LogErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LogMudanca.Designer.cs">
+      <DependentUpon>LogMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Monitorar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Monitorar.Designer.cs">
+      <DependentUpon>Monitorar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NovoCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NovoCiclo.Designer.cs">
+      <DependentUpon>NovoCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OpcoesImpressao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OpcoesImpressao.Designer.cs">
+      <DependentUpon>OpcoesImpressao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PenDrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PenDrive.Designer.cs">
+      <DependentUpon>PenDrive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelatorioLogErro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatorioLogErro.Designer.cs">
+      <DependentUpon>RelatorioLogErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelatorioLogMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatorioLogMudanca.Designer.cs">
+      <DependentUpon>RelatorioLogMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelTratamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelTratamento.Designer.cs">
+      <DependentUpon>RelTratamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Secagens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Secagens.Designer.cs">
+      <DependentUpon>Secagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SelectEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SelectEquip.Designer.cs">
+      <DependentUpon>SelectEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StatusAtualizacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StatusAtualizacao.Designer.cs">
+      <DependentUpon>StatusAtualizacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VO\Backup.cs" />
+    <Compile Include="VO\Ciclos.cs" />
+    <Compile Include="VO\ComunicacaoSelecionada.cs" />
+    <Compile Include="VO\Conexao.cs" />
+    <Compile Include="VO\Configuracao.cs" />
+    <Compile Include="VO\ConfiguracaoRelatorio.cs" />
+    <Compile Include="VO\CoresGrafico.cs" />
+    <Compile Include="VO\Destinatarios.cs" />
+    <Compile Include="VO\Empresa.cs" />
+    <Compile Include="VO\EmpresaCiclo.cs" />
+    <Compile Include="VO\Envios.cs" />
+    <Compile Include="VO\ImportarCiclo.cs" />
+    <Compile Include="VO\LegendasGrafico.cs" />
+    <Compile Include="VO\LeiturasCiclo.cs" />
+    <Compile Include="VO\LeiturasTrat.cs" />
+    <Compile Include="VO\ListaCiclosTratGrafico.cs" />
+    <Compile Include="VO\LogErro.cs" />
+    <Compile Include="VO\LogMudanca.cs" />
+    <Compile Include="VO\Produto.cs" />
+    <Compile Include="VO\ProdutoCiclo.cs" />
+    <Compile Include="VO\Secagem.cs" />
+    <Compile Include="VO\StatusSecagem.cs" />
+    <Compile Include="VO\UltimoFiltro.cs" />
+    <Compile Include="VO\Unidade.cs" />
+    <EmbeddedResource Include="View\AdicionarCiclo.resx">
+      <DependentUpon>AdicionarCiclo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Filtro.resx">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormularioEmail.resx">
+      <DependentUpon>FormularioEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmConfiguracoesRelatorio.resx">
+      <DependentUpon>frmConfiguracoesRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPendriveList.resx">
+      <DependentUpon>frmPendriveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSelecionarMeioComunicacao.resx">
+      <DependentUpon>frmSelecionarMeioComunicacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelGeral.rdlc" />
+    <EmbeddedResource Include="View\RelGeral.resx">
+      <DependentUpon>RelGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CadastroGenerico.resx">
+      <DependentUpon>CadastroGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Carregar.resx">
+      <DependentUpon>Carregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ciclos.resx">
+      <DependentUpon>Ciclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConfiguracoesGerais.resx">
+      <DependentUpon>ConfiguracoesGerais.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DetalhesCiclo.resx">
+      <DependentUpon>DetalhesCiclo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DetalhesProdutosCiclo.resx">
+      <DependentUpon>DetalhesProdutosCiclo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Empresa.resx">
+      <DependentUpon>Empresa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grafico.resx">
+      <DependentUpon>Grafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Informacoes.resx">
+      <DependentUpon>Informacoes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Historico.resx">
+      <DependentUpon>Historico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ImportarExportar.resx">
+      <DependentUpon>ImportarExportar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Legenda.resx">
+      <DependentUpon>Legenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LogErro.resx">
+      <DependentUpon>LogErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LogMudanca.resx">
+      <DependentUpon>LogMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Monitorar.resx">
+      <DependentUpon>Monitorar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NovoCiclo.resx">
+      <DependentUpon>NovoCiclo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OpcoesImpressao.resx">
+      <DependentUpon>OpcoesImpressao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PenDrive.resx">
+      <DependentUpon>PenDrive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatorioLogErro.rdlc" />
+    <EmbeddedResource Include="View\RelatorioLogErro.resx">
+      <DependentUpon>RelatorioLogErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatorioLogMudanca.rdlc" />
+    <EmbeddedResource Include="View\RelatorioLogMudanca.resx">
+      <DependentUpon>RelatorioLogMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelTratamento.rdlc" />
+    <EmbeddedResource Include="View\RelTratamento.resx">
+      <DependentUpon>RelTratamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Secagens.resx">
+      <DependentUpon>Secagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SelectEquip.resx">
+      <DependentUpon>SelectEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StatusAtualizacao.resx">
+      <DependentUpon>StatusAtualizacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetGeral.xsc">
+      <DependentUpon>DataSetGeral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetGeral.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGeral.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetGeral.xss">
+      <DependentUpon>DataSetGeral.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfiguracaoEmail.xml" />
+    <Content Include="Destinatarios.xml" />
+    <None Include="Resources\1413915804_3207.ico" />
+    <None Include="Resources\configuração.ico" />
+    <None Include="Resources\exportar.ico" />
+    <Content Include="Resources\history.ico" />
+    <None Include="Resources\importar.ico" />
+    <None Include="Resources\LOG ERRO.ico" />
+    <None Include="Resources\LOG MUDANÇA2.ico" />
+    <Content Include="Resources\Logs.ico" />
+    <None Include="Resources\Monitorar.ico" />
+    <None Include="Resources\outro.ico" />
+    <None Include="Resources\primeiro.ico" />
+    <Content Include="Resources\Refresh.ico" />
+    <Content Include="Resources\Grafico_32x32.ico" />
+    <Content Include="Resources\IcoSelect.ico" />
+    <Content Include="Resources\DadosSistema.ico" />
+    <Content Include="Resources\IcoExportarImportar.ico" />
+    <None Include="Resources\TelaCRG08.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="teste.ico" />
+    <Content Include="Ultimos.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Saida7.png" />
+    <None Include="Resources\Saida6.png" />
+    <None Include="Resources\Saida5.png" />
+    <None Include="Resources\Saida34.png" />
+    <None Include="Resources\Saida12.png" />
+    <None Include="Resources\Saida7Vermelho.png" />
+    <None Include="Resources\Saida6Vermelho.png" />
+    <None Include="Resources\Saida5Vermelho.png" />
+    <None Include="Resources\Saida34Vermelho.png" />
+    <None Include="Resources\Saida12Vermelho.png" />
+    <None Include="Resources\Saida7Verde.png" />
+    <None Include="Resources\Saida6Verde.png" />
+    <None Include="Resources\Saida5Verde.png" />
+    <None Include="Resources\Saida34Verde.png" />
+    <None Include="Resources\Saida12Verde.png" />
+    <None Include="Resources\ConexãoVerde.png" />
+    <None Include="Resources\E1Verde.png" />
+    <None Include="Resources\E2Verde.png" />
+    <None Include="Resources\BotaoEsq1.jpg" />
+    <None Include="Resources\BotaoCima1.jpg" />
+    <None Include="Resources\BotaoDir1.jpg" />
+    <None Include="Resources\BotaoFuncao1.jpg" />
+    <None Include="Resources\Botaobaixo1.jpg" />
+    <None Include="Resources\BotaoEntrar1.jpg" />
+    <None Include="Resources\E1Vermelho.png" />
+    <None Include="Resources\E2Vermelho.png" />
+    <None Include="Resources\ConexãoVermelha.png" />
+    <None Include="Resources\Conexão.png" />
+    <None Include="Resources\E1.png" />
+    <None Include="Resources\E2.png" />
+    <Content Include="Resources\IcoRelatorio.ico" />
+    <Content Include="Resources\IcoConfiguracoes.ico" />
+    <Content Include="Resources\IcoCadastro.ico" />
+    <Content Include="Resources\IcoBackup.ico" />
+    <Content Include="Resources\IcoAdd.ico" />
+    <Content Include="Resources\IcoCRG.ico" />
+    <Content Include="Resources\IcoArquivos.ico" />
+    <Content Include="Resources\LogoDigiSemNome.bmp" />
+    <Content Include="Resources\LogoDigiComNome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

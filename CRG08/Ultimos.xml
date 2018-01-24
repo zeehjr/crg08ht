@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ultimos>
+  <ultimo>
+    <Id>1</Id>
+    <Operador></Operador>
+    <Responsavel></Responsavel>
+    <Logo>"Digisystem"</Logo>
+    <Atualizacao></Atualizacao>
+    <CoresT1>T1</CoresT1>
+    <CoresT2>T2</CoresT2>
+    <CoresT3>T3</CoresT3>
+    <CoresT4>T4</CoresT4>
+    <CoresCA>CA</CoresCA>
+    <CoresT1>255,0,0</CoresT1>
+    <CoresT2>0,255,0</CoresT2>
+    <CoresT3>0,0,255</CoresT3>
+    <CoresT4>128,0,128</CoresT4>
+    <CoresCA>255,0,128</CoresCA>
+    <ValorFiltro>0</ValorFiltro>
+    <DataInicio></DataInicio>
+    <DataFim></DataFim>
+    <Equipamento>1</Equipamento>
+    <QtdeMeses>0</QtdeMeses>
+  </ultimo>
+</Ultimos>

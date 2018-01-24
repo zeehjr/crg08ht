@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConfiguracaoEmail>
+  <Configuracao>
+    <Id>1</Id>
+    <SMTP></SMTP>
+    <De></De>
+    <NomeUsuario></NomeUsuario>
+    <Senha></Senha>
+    <Porta></Porta>
+    <SSL>0</SSL>
+  </Configuracao>
+</ConfiguracaoEmail> 

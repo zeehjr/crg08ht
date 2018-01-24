@@ -1,0 +1,1294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Select.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Select.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Select.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <metadata name="colProduto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colProduto.HeaderText" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="colProduto.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <metadata name="colVolume.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colVolume.HeaderText" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <metadata name="colUnidade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colUnidade.HeaderText" xml:space="preserve">
+    <value>Unidade</value>
+  </data>
+  <metadata name="colEmpresa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colEmpresa.HeaderText" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <metadata name="helpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dtgProdutos.HelpString" xml:space="preserve">
+    <value>Informações do ciclo como produto, volume, unidade e empresa.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dtgProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 166</value>
+  </data>
+  <data name="dtgProdutos.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dtgProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 159</value>
+  </data>
+  <data name="dtgProdutos.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dtgProdutos.Name" xml:space="preserve">
+    <value>dtgProdutos</value>
+  </data>
+  <data name="&gt;&gt;dtgProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtgProdutos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtgProdutos.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnGerenciarUnidades.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnGerenciarUnidades.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="btnGerenciarUnidades.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGerenciarUnidades.HelpString" xml:space="preserve">
+    <value>Botão para criação de unidade, eles serão indicados na coluna unidade.</value>
+  </data>
+  <data name="btnGerenciarUnidades.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 19</value>
+  </data>
+  <data name="btnGerenciarUnidades.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnGerenciarUnidades.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnGerenciarUnidades.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnGerenciarUnidades.Text" xml:space="preserve">
+    <value>Unidades</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarUnidades.Name" xml:space="preserve">
+    <value>btnGerenciarUnidades</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarUnidades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarUnidades.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarUnidades.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnGerenciarEmpresas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnGerenciarEmpresas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="btnGerenciarEmpresas.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGerenciarEmpresas.HelpString" xml:space="preserve">
+    <value>Botão para criação de empresas, eles serão indicados na coluna empresas.</value>
+  </data>
+  <data name="btnGerenciarEmpresas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 19</value>
+  </data>
+  <data name="btnGerenciarEmpresas.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnGerenciarEmpresas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnGerenciarEmpresas.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnGerenciarEmpresas.Text" xml:space="preserve">
+    <value>Empresas</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarEmpresas.Name" xml:space="preserve">
+    <value>btnGerenciarEmpresas</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarEmpresas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarEmpresas.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarEmpresas.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnGerenciarProdutos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnGerenciarProdutos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="btnGerenciarProdutos.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGerenciarProdutos.HelpString" xml:space="preserve">
+    <value>Botão para criação de produtos, eles serão indicados na coluna produtos.</value>
+  </data>
+  <data name="btnGerenciarProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="btnGerenciarProdutos.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnGerenciarProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnGerenciarProdutos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnGerenciarProdutos.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarProdutos.Name" xml:space="preserve">
+    <value>btnGerenciarProdutos</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarProdutos.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnGerenciarProdutos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 376</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 51</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Gerenciar dados salvos</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btnNovoProduto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnNovoProduto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnNovoProduto.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnNovoProduto.HelpString" xml:space="preserve">
+    <value>Botão que insere uma nova linha com dados de um novo ciclo, necessário adicionar produto, volume, unidade e empresa.</value>
+  </data>
+  <data name="btnNovoProduto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 331</value>
+  </data>
+  <data name="btnNovoProduto.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnNovoProduto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="btnNovoProduto.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnNovoProduto.Text" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="&gt;&gt;btnNovoProduto.Name" xml:space="preserve">
+    <value>btnNovoProduto</value>
+  </data>
+  <data name="&gt;&gt;btnNovoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNovoProduto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnNovoProduto.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnExcluirProduto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExcluirProduto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnExcluirProduto.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExcluirProduto.HelpString" xml:space="preserve">
+    <value>Botão que exclui uma linha dos dados de um novo ciclo.</value>
+  </data>
+  <data name="btnExcluirProduto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 331</value>
+  </data>
+  <data name="btnExcluirProduto.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnExcluirProduto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="btnExcluirProduto.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnExcluirProduto.Text" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="&gt;&gt;btnExcluirProduto.Name" xml:space="preserve">
+    <value>btnExcluirProduto</value>
+  </data>
+  <data name="&gt;&gt;btnExcluirProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExcluirProduto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnExcluirProduto.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label3.HelpString" xml:space="preserve">
+    <value>Número configurado do aparelho, mostra o numero no setup.</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 114</value>
+  </data>
+  <data name="label3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>CRG Nº:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblNumCRG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumCRG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblNumCRG.HelpKeyword" xml:space="preserve">
+    <value>Mostra o numero do equipamento crg08</value>
+  </data>
+  <data name="lblNumCRG.HelpString" xml:space="preserve">
+    <value>Número configurado do aparelho, mostra o numero no setup.</value>
+  </data>
+  <data name="lblNumCRG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 114</value>
+  </data>
+  <data name="lblNumCRG.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumCRG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 13</value>
+  </data>
+  <data name="lblNumCRG.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblNumCRG.Text" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="&gt;&gt;lblNumCRG.Name" xml:space="preserve">
+    <value>lblNumCRG</value>
+  </data>
+  <data name="&gt;&gt;lblNumCRG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNumCRG.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNumCRG.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label5.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.HelpString" xml:space="preserve">
+    <value>Descrição do material e cliente que o ciclo pertence.</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 139</value>
+  </data>
+  <data name="label5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Descrição:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtDescricao.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescricao.HelpString" xml:space="preserve">
+    <value>Descrição do material e cliente que o ciclo pertence.</value>
+  </data>
+  <data name="txtDescricao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 136</value>
+  </data>
+  <data name="txtDescricao.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDescricao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 20</value>
+  </data>
+  <data name="txtDescricao.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Name" xml:space="preserve">
+    <value>txtDescricao</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label6.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.HelpString" xml:space="preserve">
+    <value>Recebe o nome do responsável técnico.</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 114</value>
+  </data>
+  <data name="label6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Responsável Técnico:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label7.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label7.HelpString" xml:space="preserve">
+    <value>Recebe o nome do operador.</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 139</value>
+  </data>
+  <data name="label7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Operador:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtRespTecnico.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRespTecnico.HelpString" xml:space="preserve">
+    <value>Recebe o nome do responsável técnico.</value>
+  </data>
+  <data name="txtRespTecnico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 111</value>
+  </data>
+  <data name="txtRespTecnico.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtRespTecnico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="txtRespTecnico.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtRespTecnico.Name" xml:space="preserve">
+    <value>txtRespTecnico</value>
+  </data>
+  <data name="&gt;&gt;txtRespTecnico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRespTecnico.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtRespTecnico.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtOperador.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOperador.HelpString" xml:space="preserve">
+    <value>Recebe o nome do operador.</value>
+  </data>
+  <data name="txtOperador.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 136</value>
+  </data>
+  <data name="txtOperador.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtOperador.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="txtOperador.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txtOperador.Name" xml:space="preserve">
+    <value>txtOperador</value>
+  </data>
+  <data name="&gt;&gt;txtOperador.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtOperador.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtOperador.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 369</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 1</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 103</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 1</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnCancelar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnCancelar.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelar.HelpString" xml:space="preserve">
+    <value>Cancela a criação de um novo ciclo, não grava ou altera dados.</value>
+  </data>
+  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 376</value>
+  </data>
+  <data name="btnCancelar.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 51</value>
+  </data>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnReceber.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnReceber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnReceber.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnReceber.HelpString" xml:space="preserve">
+    <value>Recebe os dados do aparelho completando a geração de um novo ciclo.</value>
+  </data>
+  <data name="btnReceber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 376</value>
+  </data>
+  <data name="btnReceber.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnReceber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 51</value>
+  </data>
+  <data name="btnReceber.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnReceber.Text" xml:space="preserve">
+    <value>Receber</value>
+  </data>
+  <data name="&gt;&gt;btnReceber.Name" xml:space="preserve">
+    <value>btnReceber</value>
+  </data>
+  <data name="&gt;&gt;btnReceber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReceber.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReceber.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblInfoAparelho.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInfoAparelho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblInfoAparelho.HelpKeyword" xml:space="preserve">
+    <value>Indica algumas informações retiradas do aparelho como numero do crg, numero de série e temperatura máxima de trabalho.</value>
+  </data>
+  <data name="lblInfoAparelho.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 61</value>
+  </data>
+  <data name="lblInfoAparelho.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInfoAparelho.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 13</value>
+  </data>
+  <data name="lblInfoAparelho.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblInfoAparelho.Text" xml:space="preserve">
+    <value>CRG Nº 01 - Nº Série 117-1799 - 150ºC</value>
+  </data>
+  <data name="&gt;&gt;lblInfoAparelho.Name" xml:space="preserve">
+    <value>lblInfoAparelho</value>
+  </data>
+  <data name="&gt;&gt;lblInfoAparelho.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInfoAparelho.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lblInfoAparelho.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label8.HelpKeyword" xml:space="preserve">
+    <value>Indica algumas informações retiradas do aparelho como numero do crg, numero de série e temperatura máxima de trabalho.</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 61</value>
+  </data>
+  <data name="label8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Informações do aparelho:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblInfoTratamento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInfoTratamento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblInfoTratamento.HelpKeyword" xml:space="preserve">
+    <value>Indica se ocorreu ou não o tratamento.</value>
+  </data>
+  <data name="lblInfoTratamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 44</value>
+  </data>
+  <data name="lblInfoTratamento.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInfoTratamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 13</value>
+  </data>
+  <data name="lblInfoTratamento.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblInfoTratamento.Text" xml:space="preserve">
+    <value>Não realizou tratamento</value>
+  </data>
+  <data name="&gt;&gt;lblInfoTratamento.Name" xml:space="preserve">
+    <value>lblInfoTratamento</value>
+  </data>
+  <data name="&gt;&gt;lblInfoTratamento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInfoTratamento.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lblInfoTratamento.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label1.HelpKeyword" xml:space="preserve">
+    <value>Indica se ocorreu ou não o tratamento.</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="label1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Tratamento:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblPeriodoCiclo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPeriodoCiclo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblPeriodoCiclo.HelpKeyword" xml:space="preserve">
+    <value>Período do ciclo com data e hora do ínicio ao fim.</value>
+  </data>
+  <data name="lblPeriodoCiclo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 27</value>
+  </data>
+  <data name="lblPeriodoCiclo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPeriodoCiclo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 13</value>
+  </data>
+  <data name="lblPeriodoCiclo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblPeriodoCiclo.Text" xml:space="preserve">
+    <value>De 20/01/2017 15:00 até 20/01/2017 16:44</value>
+  </data>
+  <data name="&gt;&gt;lblPeriodoCiclo.Name" xml:space="preserve">
+    <value>lblPeriodoCiclo</value>
+  </data>
+  <data name="&gt;&gt;lblPeriodoCiclo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPeriodoCiclo.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lblPeriodoCiclo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label2.HelpKeyword" xml:space="preserve">
+    <value>Período do ciclo com data e hora do ínicio ao fim.</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <data name="label2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Período do Ciclo:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblTitulo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblTitulo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblTitulo.HelpKeyword" xml:space="preserve">
+    <value>Indica o numero do tratamento e a quantidade de leituras.</value>
+  </data>
+  <data name="lblTitulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblTitulo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 5, 0, 0</value>
+  </data>
+  <data name="lblTitulo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTitulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>626, 19</value>
+  </data>
+  <data name="lblTitulo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTitulo.Text" xml:space="preserve">
+    <value>Tratamento Nº 001 com 999 leituras</value>
+  </data>
+  <data name="lblTitulo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Name" xml:space="preserve">
+    <value>lblTitulo</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel3.HelpString" xml:space="preserve">
+    <value>Algumas informações trazidas do equipamento como período do ciclo, tratamento concluído ou não concluído e numeros de série e do aparelho.</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="panel3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 85</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblStatusProdutos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblStatusProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 331</value>
+  </data>
+  <data name="lblStatusProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 13</value>
+  </data>
+  <data name="lblStatusProdutos.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblStatusProdutos.Text" xml:space="preserve">
+    <value>Volumes dos produtos não batem com o volume total recebido do equipamento.</value>
+  </data>
+  <data name="lblStatusProdutos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutos.Name" xml:space="preserve">
+    <value>lblStatusProdutos</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 344</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 13</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.Text" xml:space="preserve">
+    <value>Volume total possui 0,603m³ a mais do que o que foi preenchido</value>
+  </data>
+  <data name="lblStatusProdutosMoreInfo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutosMoreInfo.Name" xml:space="preserve">
+    <value>lblStatusProdutosMoreInfo</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutosMoreInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutosMoreInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblStatusProdutosMoreInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>652, 432</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwsbL/mK2q/5Cfnf+OmJb/l5yc/6eqqv+wsbL/vb2//8jI
+        yv/Jycv/yMjK/8fHyf++vsH/wsLD/8LCw///////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD//////wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACdrav/m6Kh/6Gkpf+/v8D/x8fJ/7Cxsv/Ozs//zs7Q/9DQ
+        0v/AvLf/zs7Q/83Nz//MzM3/y8vN/8TExv/Hx8j//////wAAAP8AAAD//////////////////////wAA
+        AP8AAAD//////wAAAAAAAAAAAAAAAAAAAAAAAAAAnaCg/93d3//U1Nb/wLy3/8C8t//AvLf/8/Pz//Pz
+        8/+wsbL/wLy3//////+wsbL/wLy3///////z8/P/xMTG//////8AAAD/AAAA////////////AAAA/wAA
+        AP///////////wAAAP8AAAD//////wAAAAAAAAAAAAAAAKexsP/V1df/2dnb/7Cxsv//////sLGy////
+        ///AvLf/wLy3//Pz8//z8/P/sLGy//Pz8//AvLf/8/Pz/8C8t///////AAAA/wAAAP//////////////
+        //8AAAD/AAAA/////////////////wAAAP8AAAD//////wAAAAAAAAAAsLGy/+Xl5v+wsbL/sLGy/9/f
+        4f/W1tj/1NTW/9PT1f/T09X/09PU/9LR0P/j4+X/4+Pl/+Pj5f/j4+X/4+Pl/wAAAP8AAAD/////////
+        /////////////wAAAP8AAAD//////////////////////wAAAP8AAAD/AAAAALCxsv/B2tX/sLGy/+Pj
+        5f/d3N3/1NDL/8C8t//AvLf/4+Pl/7Cxsv/j4+X/sLGy/7Cxsv/j4+X/sLGy/7Cxsv/j4+X/AAAA////
+        ////////////////////////AAAA/wAAAP///////////////////////////wAAAP+wsbL/4+Pl/7Cx
+        sv/j4+X/sLGy/7Cxsv+wsbL/4+Pl////////////////////////////////////////////////////
+        //8AAAD//////wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP//////AAAA/+Pj
+        5f//////////////////////////////////////////////////////////////////////////////
+        /////////////wAAAP//////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA////
+        //8AAAD/sLGy////////////////////////////////////////////////////////////////////
+        ////////////////////////AAAA////////////////////////////AAAA/wAAAP//////////////
+        /////////////wAAAP/j4+X/////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/AAAA////////////AAAA//////8AAAD/AAAA////
+        //////////////////8AAAD/AAAA/7Cxsv+wsbL/////////////////////////////////////////
+        ////////////////////////////////////////nczk/7a2tv8AAAD/AAAA/wAAAP8AAAD//////wAA
+        AP8AAAD/////////////////AAAA/wAAAP//////AAAAAOPj5f+wsbL/////////////////////////
+        /////////////////////////////////////////////1+GVv+dzOT/nczk/wAAAP8AAAD/AAAA/wAA
+        AP//////AAAA/wAAAP///////////wAAAP8AAAD//////wAAAAAAAAAAAAAAAOPj5f+wsbL/////////
+        //////////////////////////////////////////////////9gh1b/XZFR/6HCmf+dzOT/AAAA/wAA
+        AP8AAAD/AAAA//////////////////////8AAAD/AAAA//////8AAAAAAAAAAAAAAAAAAAAAAAAAALCx
+        sv//////////////////////////////////////////////////////YYpX/1uRT/+hw5n/lbGH/wAA
+        AP8AAAD/AAAA/wAAAP8AAAD//////wAAAP8AAAD/AAAA/wAAAP//////AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA4+Pl/7Cxsv///////////////////////////////////////////5WQdP9Xj0v/n8KX/5Wx
+        h/+wpn////////////////////////////+wsbL/sLGy/729v//z8/P/m6ej/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAsLGy/7Cxsv////////////////////////////////+VkHT/VohL/53C
+        lf+VsYf/qqR9//////////////////////////////////////+wsbL/wLy3/9PT1f+usbD/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADj4+X/sLGy////////////////////////////lZB0/1aI
+        S/+cwZP/lbGH/6Whe////////////////////////////////////////////7Cxsv+wsbL/4+Pl/7Cx
+        sv+wsbL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADj4+X/sLGy/////////////////5WQ
+        dP9jhFz/nMGT/5Wxh/+loXv//////////////////////////////////////////////////////7Cx
+        sv+9vb7/8/Pz/6Suq/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADj4+X/////////
+        //+blXn/ZINc/5zBk/+VsYf/oaF7////////////////////////////////////////////////////
+        ////////sLGy/7Cxsv/Pz9H/sLGy/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALCx
+        sv/j4+X/opt+/2SCXP+cwZP/lbGH/6Whe///////////////////////////////////////////////
+        ////////////////////////sLGy/+Pj5f+wsbL/sLGy/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAKOdgf9lhFz/nMGT/5Wxh/+loXv/////////////////////////////////////////
+        //////////////////////////////////+wsbL/xsbI//Pz8/+wsbL/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAZYdd/5zBk/+VsYf/paF7////////////////////////////////////
+        //////////////////////////////////////////////////+wsbL/8/Pz/7Cxsv8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGSCXP+cwZP/lbGH/6Whe///////////////////////////////
+        /////////////////////////////////////////////////////////////+Pj5f/z8/P/wsLE/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkglz/nMGT/5Wxh/+loXv/wLy3/8C8t//j4+X/wLy3/+Pj
+        5f/AvLf/wLy3/8C8t//j4+X/4+Pl/8C8t//j4+X/4+Pl/8C8t//j4+X/4+Pl/8C8t//AvLf/sLGy/7Cx
+        sv/z8/P/sLGy/wAAAAAAAAAAAAAAAAAAAAAAAAAAao5j/5zBk/+VsYf/paF7/7Cxsv//AAD/////////
+        ////AAD///////8AAP//AAD//wAA////////AAD//wAA////////AAD//wAA////////////AAAA/wAA
+        AP8AAAD//////+Pj5f+wsbL/AAAAAAAAAAAAAAAAAAAAAGuRZf+cwZP/lbGH/6Whe/+wsbL/4+Pl//8A
+        AP///////wAA//8AAP///////wAA//////////////////8AAP///////wAA////////AAD/AAAA////
+        //8AAAD//////wAAAP8AAAD//////7Cxsv8AAAAAAAAAAAAAAABwm23/nMGT/5Wxh/+loXv/AAAAAP//
+        //+wsbL//wAA//8AAP///////wAA////////AAD//wAA//8AAP///////wAA////////AAD///////8A
+        AP8AAAD/AAAA/////////////////wAAAP//////sLGy/wAAAAAAAAAAfah//5zBk/+VsYf/paF7/wAA
+        AAAAAAAAsLGy/+Pj5f//AAD/////////////AAD///////8AAP//////////////////AAD///////8A
+        AP///////wAA/wAAAP8AAAD/AAAA//////8AAAD/AAAA//////+wsbL/AAAAAAAAAAByn3P/lbGH/6Wh
+        e/8AAAAAAAAAAAAAAAD/////sLGy//8AAP////////////8AAP///////wAA//8AAP//AAD///////8A
+        AP//////////////////AAD//////////////////////wAAAP//////4+Pl/7Cxsv8AAAAAAAAAAAAA
+        AACloXv/AAAAAAAAAAAAAAAAAAAAALCxsv/j4+X/sLGy/+Pj5f+wsbL/4+Pl/7Cxsv/j4+X/sLGy/+Pj
+        5f/j4+X/sLGy/+Pj5f+wsbL/4+Pl/7Cxsv/j4+X/sLGy/+Pj5f+wsbL/sLGy/+Pj5f+wsbL/sLGy/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////7Cxsv//////sLGy//////+wsbL//////7Cx
+        sv//////sLGy/7Cxsv//////sLGy//////+wsbL//////7Cxsv//////sLGy/7Cxsv//////sLGy////
+        //+wsbL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/AAAB/AAAAPgAAABwAAAAMAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACAAAABwAAAA+AAAAfgAAAP8AAAD/AAAAf4AAAH/AAAB/wAAAP+AAAD/gAAA/wAAAP4AAAB8AAAAeAA
+        AAHCAAABhgAAAY4AAAHeAAAB/gAAAf////8=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Novo Ciclo - Tratamento 001</value>
+  </data>
+  <data name="&gt;&gt;Select.Name" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="&gt;&gt;Select.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colProduto.Name" xml:space="preserve">
+    <value>colProduto</value>
+  </data>
+  <data name="&gt;&gt;colProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colVolume.Name" xml:space="preserve">
+    <value>colVolume</value>
+  </data>
+  <data name="&gt;&gt;colVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colUnidade.Name" xml:space="preserve">
+    <value>colUnidade</value>
+  </data>
+  <data name="&gt;&gt;colUnidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colEmpresa.Name" xml:space="preserve">
+    <value>colEmpresa</value>
+  </data>
+  <data name="&gt;&gt;colEmpresa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
+    <value>helpProvider1</value>
+  </data>
+  <data name="&gt;&gt;helpProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdicionarCiclo</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
