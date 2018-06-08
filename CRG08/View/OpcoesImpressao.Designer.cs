@@ -315,6 +315,7 @@
             // Geral
             // 
             this.Geral.AutoSize = true;
+            this.Geral.Checked = true;
             this.helpProvider1.SetHelpKeyword(this.Geral, "");
             this.helpProvider1.SetHelpString(this.Geral, "Será impresso a tabela do ciclo e do tratamento.");
             this.Geral.Location = new System.Drawing.Point(6, 41);
@@ -322,6 +323,7 @@
             this.helpProvider1.SetShowHelp(this.Geral, true);
             this.Geral.Size = new System.Drawing.Size(51, 18);
             this.Geral.TabIndex = 5;
+            this.Geral.TabStop = true;
             this.Geral.Text = "Geral";
             this.Geral.UseVisualStyleBackColor = true;
             this.Geral.CheckedChanged += new System.EventHandler(this.Geral_CheckedChanged);
@@ -329,7 +331,6 @@
             // Tratamento
             // 
             this.Tratamento.AutoSize = true;
-            this.Tratamento.Checked = true;
             this.helpProvider1.SetHelpKeyword(this.Tratamento, "");
             this.helpProvider1.SetHelpString(this.Tratamento, "Será impresso a tabela com as temperaturas e gráfico do tratamento.");
             this.Tratamento.Location = new System.Drawing.Point(6, 19);
@@ -337,7 +338,6 @@
             this.helpProvider1.SetShowHelp(this.Tratamento, true);
             this.Tratamento.Size = new System.Drawing.Size(79, 18);
             this.Tratamento.TabIndex = 4;
-            this.Tratamento.TabStop = true;
             this.Tratamento.Text = "Tratamento";
             this.Tratamento.UseVisualStyleBackColor = true;
             this.Tratamento.CheckedChanged += new System.EventHandler(this.Tratamento_CheckedChanged);

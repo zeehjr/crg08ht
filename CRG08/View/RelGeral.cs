@@ -47,6 +47,8 @@ namespace CRG08
                     fieldInfo.SetValue(extension, false);
                 else if (string.Compare("WORD", extension.Name) == 0)
                     fieldInfo.SetValue(extension, false);
+                else if (string.Compare("EXCELOPENXML", extension.Name) == 0) fieldInfo.SetValue(extension, false);
+                else if (string.Compare("WORDOPENXML", extension.Name) == 0) fieldInfo.SetValue(extension, false);
             }
 
             List<ProdutoCiclo> listaProdutos;

@@ -86,6 +86,9 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="QRCoder, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Security" />
@@ -99,11 +102,15 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.3\lib\net40\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BO\ConexaoBO.cs" />
     <Compile Include="BO\ErrorHandler.cs" />
     <Compile Include="BO\PendriveBO.cs" />
+    <Compile Include="BO\RelatorioUtils.cs" />
     <Compile Include="BO\SecagensBO.cs" />
     <Compile Include="Dao\BackupDAO.cs" />
     <Compile Include="Dao\CicloDAO.cs" />
@@ -509,6 +516,8 @@
     <None Include="Resources\1413915804_3207.ico" />
     <None Include="Resources\configuração.ico" />
     <None Include="Resources\exportar.ico" />
+    <None Include="Resources\ApenasLogoDigisystem.bmp" />
+    <Content Include="Resources\ApenasLogoDigisystem.png" />
     <Content Include="Resources\history.ico" />
     <None Include="Resources\importar.ico" />
     <None Include="Resources\LOG ERRO.ico" />
@@ -599,6 +608,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

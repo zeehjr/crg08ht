@@ -47,7 +47,7 @@
             this.Desmarca = new System.Windows.Forms.Button();
             this.TipoGrafico = new System.Windows.Forms.Button();
             this.Imprimir = new System.Windows.Forms.Button();
-            this.Cores = new System.Windows.Forms.Button();
+            this.btnConfigurar = new System.Windows.Forms.Button();
             this.Sair = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblProdutos = new System.Windows.Forms.Label();
@@ -291,20 +291,20 @@
             this.Imprimir.UseVisualStyleBackColor = true;
             this.Imprimir.Click += new System.EventHandler(this.Imprimir_Click);
             // 
-            // Cores
+            // btnConfigurar
             // 
-            this.Cores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Cores.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpProvider1.SetHelpKeyword(this.Cores, "");
-            this.helpProvider1.SetHelpString(this.Cores, "Alteração de cores de cada componente do processo.");
-            this.Cores.Location = new System.Drawing.Point(787, 451);
-            this.Cores.Name = "Cores";
-            this.helpProvider1.SetShowHelp(this.Cores, true);
-            this.Cores.Size = new System.Drawing.Size(75, 23);
-            this.Cores.TabIndex = 18;
-            this.Cores.Text = "Cores";
-            this.Cores.UseVisualStyleBackColor = true;
-            this.Cores.Click += new System.EventHandler(this.Cores_Click);
+            this.btnConfigurar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConfigurar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpProvider1.SetHelpKeyword(this.btnConfigurar, "");
+            this.helpProvider1.SetHelpString(this.btnConfigurar, "Alteração de cores de cada componente do processo.");
+            this.btnConfigurar.Location = new System.Drawing.Point(787, 451);
+            this.btnConfigurar.Name = "btnConfigurar";
+            this.helpProvider1.SetShowHelp(this.btnConfigurar, true);
+            this.btnConfigurar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfigurar.TabIndex = 18;
+            this.btnConfigurar.Text = "Configurar";
+            this.btnConfigurar.UseVisualStyleBackColor = true;
+            this.btnConfigurar.Click += new System.EventHandler(this.Cores_Click);
             // 
             // Sair
             // 
@@ -509,7 +509,7 @@
             this.Controls.Add(this.Produtos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Sair);
-            this.Controls.Add(this.Cores);
+            this.Controls.Add(this.btnConfigurar);
             this.Controls.Add(this.Imprimir);
             this.Controls.Add(this.TipoGrafico);
             this.Controls.Add(this.Desmarca);
@@ -551,7 +551,7 @@
         private System.Windows.Forms.Button Desmarca;
         private System.Windows.Forms.Button TipoGrafico;
         private System.Windows.Forms.Button Imprimir;
-        private System.Windows.Forms.Button Cores;
+        private System.Windows.Forms.Button btnConfigurar;
         private System.Windows.Forms.Button Sair;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Operador;

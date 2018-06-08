@@ -67,7 +67,7 @@ namespace CRG08.BO
                 return null;
             }
 
-            var crg150 = ultimo == 22;
+            var crg150 = ultimo == 22 || ultimo == 24;
 
             var possuiProdutoFixo = ultimo == 24 || ultimo == 25;
 
@@ -166,6 +166,8 @@ namespace CRG08.BO
 
             //Leitura inicio do Tratamento
             ciclo.NLIniTrat = ((buffer[23 - dec] & 127) * 256) + buffer[24 - dec];
+
+
             //Qtde leituras do Tratamento
             ciclo.nlt = buffer[25 - dec];
             //Flags
@@ -257,6 +259,20 @@ namespace CRG08.BO
                         cont = cont + 8;
                     }
                 }
+
+                var nlIni = leiturasCiclo.IndexOf(leiturasCiclo.FirstOrDefault(x => x.horario == ciclo.dataIniTrat.ToString("HH:mm"))) + 1;
+                ciclo.NLIniTrat = nlIni;
+
+                var teste = leiturasCiclo.Where(x => x.horario == ciclo.dataIniTrat.ToString("HH:mm")).ToList();
+                //if (nlIni == ciclo.NLIniTrat)
+                //{
+                //    ErrorHandler.ThrowNew(559, "Tratamento corrompido. Tente puxar os dados do controlador novamente.");
+                //    return null;
+                //}
+                //else
+                //{
+
+                //}
 
                 //leituras do Tratamento
                 if (ciclo.nlt > 0)
@@ -368,6 +384,44 @@ namespace CRG08.BO
                     }
                 }
             }
+
+            if (ciclo.nlt > 0 && leiturasTrat.Where(x =>
+                x.T1 < ciclo.temperaturaTrat ||
+                x.T2 < ciclo.temperaturaTrat ||
+                x.T3 < ciclo.temperaturaTrat ||
+                x.T4 < ciclo.temperaturaTrat
+            ).Count() > 0)
+            {
+                ErrorHandler.ThrowNew(559, "Tratamento corrompido! Tente puxar a secagem do aparelho novamente.");
+                return null;
+            }
+
+
+            if (leiturasCiclo.Count > 5)
+            {
+                var fstHorarioSplit = leiturasCiclo.First().horario.Split(':');
+                var primeiro = Convert.ToInt32(Convert.ToInt32(fstHorarioSplit[0]) * 60) + Convert.ToInt32(fstHorarioSplit[1]);
+                for (var i = 0; i < leiturasCiclo.Count; i++)
+                {
+                    var spl = leiturasCiclo[i].horario.Split(':');
+                    var minutosAtuais = Convert.ToInt32(spl[0]) * 60 + Convert.ToInt32(spl[1]);
+                    var properMinutosAtuais = primeiro + i;
+                    while (minutosAtuais >= 1440)
+                    {
+                        minutosAtuais -= 1440;
+                    }
+                    while (properMinutosAtuais >= 1440)
+                    {
+                        properMinutosAtuais -= 1440;
+                    }
+                    if (minutosAtuais < properMinutosAtuais)
+                    {
+                        ErrorHandler.ThrowNew(559, "Tratamento corrompido! Tente puxar a secagem do aparelho novamente.");
+                        return null;
+                    }
+                }
+            }
+
             ciclo.situacao = 0;
             var retorno = new ItemSecagem();
             retorno.ciclo = ciclo;
@@ -978,7 +1032,7 @@ namespace CRG08.BO
 
         public static bool SecagemExistente(ItemSecagem secagem, int crg)
         {
-            
+
 
             return false;
         }
@@ -995,7 +1049,7 @@ namespace CRG08.BO
                 Sucesso = true,
                 Salvo = false
             };
-            
+
             var cicloExistente = CicloDAO.testaCiclo(secagem.ciclo);
 
             var novo = cicloExistente == null;
@@ -1011,7 +1065,8 @@ namespace CRG08.BO
                 if (frmCiclos != null)
                 {
                     produtos.ShowDialog(frmCiclos);
-                } else if (frmSecagens != null)
+                }
+                else if (frmSecagens != null)
                 {
                     produtos.ShowDialog(frmSecagens);
                 }
@@ -1019,7 +1074,7 @@ namespace CRG08.BO
                 {
                     produtos.ShowDialog();
                 }
-                
+
                 if (!produtos.Confirmado) goto Cancelado;
 
                 secagem.ciclo.descricao = produtos.Descricao;

@@ -73,6 +73,16 @@ namespace CRG08.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ApenasLogoDigisystem {
+            get {
+                object obj = ResourceManager.GetObject("ApenasLogoDigisystem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botaobaixo {
             get {
                 object obj = ResourceManager.GetObject("Botaobaixo", resourceCulture);

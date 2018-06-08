@@ -185,10 +185,10 @@
       <Body>
         <ReportItems>
           <Line Name="Line2">
-            <Top>2.49138cm</Top>
+            <Top>2.49667cm</Top>
             <Left>0.41812cm</Left>
             <Height>0cm</Height>
-            <Width>18.34016cm</Width>
+            <Width>18.34014cm</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -215,7 +215,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.09423cm</Top>
+            <Top>2.09952cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.36187cm</Height>
             <Width>11.20472cm</Width>
@@ -246,10 +246,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>2.75447cm</Top>
-            <Left>0.42166cm</Left>
+            <Top>2.53382cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>8.95979cm</Width>
+            <Width>6.77701cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border />
@@ -275,10 +275,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>2.80552cm</Top>
-            <Left>10.55512cm</Left>
+            <Top>2.53195cm</Top>
+            <Left>7.4154cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.20316cm</Width>
+            <Width>7.70175cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border />
@@ -286,7 +286,7 @@
             </Style>
           </Textbox>
           <Line Name="Line3">
-            <Top>4.3698cm</Top>
+            <Top>6.28009cm</Top>
             <Left>0.41811cm</Left>
             <Height>0cm</Height>
             <Width>18.34017cm</Width>
@@ -792,7 +792,7 @@
             </TablixRowHierarchy>
             <KeepTogether>true</KeepTogether>
             <DataSetName>DataSetTratamentoTab1</DataSetName>
-            <Top>5.39531cm</Top>
+            <Top>6.6706cm</Top>
             <Left>0.42166cm</Left>
             <Height>0.75022cm</Height>
             <Width>8.60336cm</Width>
@@ -833,7 +833,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.96997cm</Top>
+            <Top>6.24526cm</Top>
             <Left>0.42166cm</Left>
             <Height>0.3195cm</Height>
             <Width>11.20118cm</Width>
@@ -849,10 +849,10 @@
             </Style>
           </Textbox>
           <Line Name="Line1">
-            <Top>2.05896cm</Top>
+            <Top>2.06425cm</Top>
             <Left>0.41812cm</Left>
             <Height>0cm</Height>
-            <Width>18.34016cm</Width>
+            <Width>18.34014cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -880,10 +880,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.00698cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>2.81974cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>8.95979cm</Width>
+            <Width>6.47271cm</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border />
@@ -909,10 +909,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.25949cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>3.10566cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>8.95979cm</Width>
+            <Width>6.47271cm</Width>
             <ZIndex>9</ZIndex>
             <Style>
               <Border />
@@ -938,10 +938,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.512cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>3.39157cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>8.95979cm</Width>
+            <Width>6.47271cm</Width>
             <ZIndex>10</ZIndex>
             <Style>
               <Border />
@@ -967,10 +967,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>4.05026cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>4.24933cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>18.34016cm</Width>
+            <Width>14.69904cm</Width>
             <ZIndex>11</ZIndex>
             <Style>
               <Border />
@@ -996,10 +996,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.05803cm</Top>
-            <Left>10.55512cm</Left>
+            <Top>2.81974cm</Top>
+            <Left>7.4154cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.20316cm</Width>
+            <Width>7.70175cm</Width>
             <ZIndex>12</ZIndex>
             <Style>
               <Border />
@@ -1025,10 +1025,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.31054cm</Top>
-            <Left>10.55512cm</Left>
+            <Top>3.10565cm</Top>
+            <Left>7.4154cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.20316cm</Width>
+            <Width>7.70175cm</Width>
             <ZIndex>13</ZIndex>
             <Style>
               <Border />
@@ -1054,10 +1054,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>2.5196cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>3.96341cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>18.34016cm</Width>
+            <Width>14.69904cm</Width>
             <ZIndex>14</ZIndex>
             <Style>
               <Border />
@@ -1083,10 +1083,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.76451cm</Top>
-            <Left>0.41812cm</Left>
+            <Top>3.67749cm</Top>
+            <Left>0.41811cm</Left>
             <Height>0.25064cm</Height>
-            <Width>8.95979cm</Width>
+            <Width>6.47271cm</Width>
             <ZIndex>15</ZIndex>
             <Style>
               <Border />
@@ -1112,10 +1112,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.56305cm</Top>
-            <Left>10.55512cm</Left>
+            <Top>3.39157cm</Top>
+            <Left>7.4154cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.20316cm</Width>
+            <Width>7.70175cm</Width>
             <ZIndex>16</ZIndex>
             <Style>
               <Border />
@@ -1142,10 +1142,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>4.39802cm</Top>
+            <Top>4.87938cm</Top>
             <Left>0.41811cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.9598cm</Width>
+            <Width>5.28339cm</Width>
             <ZIndex>17</ZIndex>
             <Style>
               <Border />
@@ -1171,10 +1171,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox37</rd:DefaultName>
-            <Top>4.63808cm</Top>
+            <Top>5.16716cm</Top>
             <Left>0.41811cm</Left>
-            <Height>0.26486cm</Height>
-            <Width>18.34017cm</Width>
+            <Height>0.93654cm</Height>
+            <Width>14.66376cm</Width>
             <ZIndex>18</ZIndex>
             <Style>
               <Border>
@@ -1186,7 +1186,7 @@
           <Image Name="Image1">
             <Source>External</Source>
             <Value>="file:\\\"&amp;Parameters!path.Value</Value>
-            <Top>6.53359cm</Top>
+            <Top>7.80888cm</Top>
             <Left>0.41812cm</Left>
             <Height>11.02364cm</Height>
             <Width>18.34016cm</Width>
@@ -1695,7 +1695,7 @@
             </TablixRowHierarchy>
             <KeepTogether>true</KeepTogether>
             <DataSetName>DataSetTratamentoTab2</DataSetName>
-            <Top>5.39531cm</Top>
+            <Top>6.6706cm</Top>
             <Left>10.1549cm</Left>
             <Height>0.75022cm</Height>
             <Width>8.60336cm</Width>
@@ -1714,7 +1714,7 @@
             <Value>=First(Fields!Logo.Value, "DataSetEmpresa")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>Fit</Sizing>
-            <Top>0.127cm</Top>
+            <Top>0.13229cm</Top>
             <Left>9.45124cm</Left>
             <Height>1.56107cm</Height>
             <Width>4.31239cm</Width>
@@ -1747,7 +1747,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.127cm</Top>
+            <Top>0.13229cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.47491cm</Height>
             <Width>8.89201cm</Width>
@@ -1781,7 +1781,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.74302cm</Top>
+            <Top>0.74831cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.23534cm</Height>
             <Width>8.89201cm</Width>
@@ -1813,7 +1813,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.99553cm</Top>
+            <Top>1.00082cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.23534cm</Height>
             <Width>8.89201cm</Width>
@@ -1845,7 +1845,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.24804cm</Top>
+            <Top>1.25333cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.23534cm</Height>
             <Width>8.89201cm</Width>
@@ -1877,7 +1877,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.50055cm</Top>
+            <Top>1.50584cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.23534cm</Height>
             <Width>8.89201cm</Width>
@@ -1909,7 +1909,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.75306cm</Top>
+            <Top>1.75835cm</Top>
             <Left>0.41812cm</Left>
             <Height>0.23534cm</Height>
             <Width>8.89201cm</Width>
@@ -1941,21 +1941,52 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.79626cm</Top>
-            <Left>10.55512cm</Left>
+            <Top>3.67749cm</Top>
+            <Left>7.4154cm</Left>
             <Height>0.25251cm</Height>
-            <Width>8.20316cm</Width>
+            <Width>7.70175cm</Width>
             <ZIndex>28</ZIndex>
             <Style>
               <Border />
               <VerticalAlign>Top</VerticalAlign>
             </Style>
           </Textbox>
+          <Line Name="Line5">
+            <Top>4.8441cm</Top>
+            <Left>0.41811cm</Left>
+            <Height>0cm</Height>
+            <Width>18.34015cm</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Image Name="QrCode">
+            <Source>External</Source>
+            <Value>="file:\\\"&amp;Parameters!QrCodePath.Value</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>2.6037cm</Top>
+            <Left>15.2618cm</Left>
+            <Height>3.5cm</Height>
+            <Width>3.5cm</Width>
+            <ZIndex>30</ZIndex>
+            <Visibility>
+              <Hidden>=Not(Parameters!ExibirQrCode.Value)</Hidden>
+            </Visibility>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
-        <Height>7.02426in</Height>
+        <Height>7.66438in</Height>
         <Style />
       </Body>
-      <Width>19.80452cm</Width>
+      <Width>19.20264cm</Width>
       <Page>
         <PageFooter>
           <Height>0.9525cm</Height>
@@ -2121,11 +2152,19 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="QrCodePath">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ExibirQrCode">
+      <DataType>Boolean</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>2</NumberOfColumns>
-      <NumberOfRows>8</NumberOfRows>
+      <NumberOfRows>9</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -2206,6 +2245,16 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>7</RowIndex>
           <ParameterName>VolumeFixo</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>8</RowIndex>
+          <ParameterName>QrCodePath</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>8</RowIndex>
+          <ParameterName>ExibirQrCode</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

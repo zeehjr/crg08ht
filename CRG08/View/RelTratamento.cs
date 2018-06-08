@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using CRG08.Dao;
 using CRG08.VO;
 using Microsoft.Reporting.WinForms;
+using CRG08.BO;
 
 namespace CRG08.View
 {
@@ -56,11 +58,12 @@ namespace CRG08.View
             }
             var totalDentro = total - 2;
 
-            var jmp = ((double)totalDentro) / qtdMaxima;
+            //var jmp = ((double)totalDentro) / qtdMaxima;
+            var jmp = (double)total / qtdMaxima;
 
             listaRetorno.Add(indiceInicial);
 
-            double totaljmp = indiceInicial+1 + jmp;
+            double totaljmp = indiceInicial + jmp;
             for (var i = 1; i < qtdMaxima - 1; i++)
             {
                 var ind = Convert.ToInt32(Math.Round(totaljmp));
@@ -371,6 +374,30 @@ namespace CRG08.View
             var listaLeiturasTrat = LeiturasTratDAO.ListaLeiturasTratamento(ciclo);
             var listaLeiturasCiclo = LeiturasCicloDAO.ListaLeiturasCiclos(ciclo);
 
+            var strProdutos = string.Empty;
+            foreach (var p in listaProdutos)
+            {
+                strProdutos += p.produto.descricao + " com " + p.volume + " " + p.unidade.unidade + " - " +
+                           p.empresa.nome + Environment.NewLine;
+            }
+
+            RelatorioUtils.GerarQrCode($"Relatório do Controlador Nº {ciclo.crg} {Environment.NewLine}Nº Série: {ciclo.numSerie}{Environment.NewLine}" +
+                $"Tratamento Nº {ciclo.nTrat}{Environment.NewLine}" +
+                $"Nº de leituras: {ciclo.nl}{Environment.NewLine}{Environment.NewLine}" +
+                $"Período do ciclo: {Environment.NewLine}Início: {ciclo.dataInicio}{Environment.NewLine}Fim: {ciclo.dataFim}{Environment.NewLine}{Environment.NewLine}" +
+                $"Temperatura de Controle {Environment.NewLine}Tc: {ciclo.temperaturaControle} ºC{Environment.NewLine}{Environment.NewLine}" +
+                $"Temperatura do Tratamento {Environment.NewLine}Tt: {ciclo.temperaturaTrat} ºC{Environment.NewLine}{Environment.NewLine}" +
+                $"Tempo do Tratamento {Environment.NewLine}tt: {ciclo.tempoTrat} minuto(s){Environment.NewLine}{Environment.NewLine}" +
+                (!string.IsNullOrWhiteSpace(ciclo.VolumeFixo) ? $"Volume total: {Environment.NewLine}" + ciclo.VolumeFixo + (ciclo.IsMetrosCubicos ? "m³" : " peças") + Environment.NewLine + Environment.NewLine : "") + 
+                (listaLeiturasTrat?.Count > 0 
+                    ? $"Início do Tratamento{Environment.NewLine}Leitura: {ciclo.NLIniTrat}{Environment.NewLine}Data: {ciclo.dataIniTrat}{Environment.NewLine}(concluído)"
+                    : "Não realizou tratamento") + Environment.NewLine + Environment.NewLine +
+                $"Responsável Técnico: {Environment.NewLine}{ciclo.responsavel}{Environment.NewLine}{Environment.NewLine}" +
+                $"Operador: {Environment.NewLine}{ciclo.operador}{Environment.NewLine}{Environment.NewLine}" +
+                $"PRODUTOS: {Environment.NewLine}" +
+                strProdutos
+            );
+
             ReportParameter Titulo = new ReportParameter("Titulo");
             Titulo.Values.Add("Relatório do Controlador Nº " + ciclo.crg + " (Nº Série: " + ciclo.numSerie + ")");
             ReportParameter Periodo = new ReportParameter("Periodo");
@@ -412,7 +439,10 @@ namespace CRG08.View
                            p.empresa.nome + " \n";
             Produtos.Values.Add(produtos);
             ReportParameter path = new ReportParameter("path");
-            path.Values.Add(Environment.CurrentDirectory + "\\Image.png");
+            path.Values.Add(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath) ?? string.Empty, "Image.png"));
+            ReportParameter qrCode = new ReportParameter("QrCodePath");
+
+            qrCode.Values.Add(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath) ?? string.Empty, "qrcode.png"));
             ReportParameter coment = new ReportParameter("Comentario");
             coment.Values.Add("Comentário: " + comentario);
 
@@ -550,6 +580,8 @@ namespace CRG08.View
                 }
             }
 
+            
+
             reportViewer1.LocalReport.SetParameters(Titulo);
             reportViewer1.LocalReport.SetParameters(Periodo);
             reportViewer1.LocalReport.SetParameters(Tc);
@@ -562,6 +594,8 @@ namespace CRG08.View
             reportViewer1.LocalReport.SetParameters(Operador);
             reportViewer1.LocalReport.SetParameters(Produtos);
             reportViewer1.LocalReport.SetParameters(path);
+            reportViewer1.LocalReport.SetParameters(qrCode);
+            reportViewer1.LocalReport.SetParameters(new ReportParameter("ExibirQrCode", "false"));
             reportViewer1.LocalReport.SetParameters(coment);
             reportViewer1.LocalReport.SetParameters(VolumeFixo);
 
@@ -571,6 +605,7 @@ namespace CRG08.View
             tratamento2BindingSource.DataSource = dataSetGeral.Tratamento2;
 
             this.reportViewer1.RefreshReport();
+            reportViewer1.LocalReport.EnableExternalImages = true;
         }
     }
 }

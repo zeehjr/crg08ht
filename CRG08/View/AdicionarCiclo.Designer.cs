@@ -195,6 +195,7 @@
             this.btnExcluirProduto.Name = "btnExcluirProduto";
             this.helpProvider1.SetShowHelp(this.btnExcluirProduto, ((bool)(resources.GetObject("btnExcluirProduto.ShowHelp"))));
             this.btnExcluirProduto.UseVisualStyleBackColor = true;
+            this.btnExcluirProduto.Click += new System.EventHandler(this.btnExcluirProduto_Click);
             // 
             // label3
             // 

@@ -79,8 +79,8 @@ namespace CRG08.View
 
         private void Cores_Click(object sender, EventArgs e)
         {
-            Cores Cores = new Cores();
-            Cores.ShowDialog(this);
+            var configGrafico = new ConfigGrafico();
+            configGrafico.ShowDialog();
         }
 
         private string ProdutosToString(VO.Ciclos ciclo)

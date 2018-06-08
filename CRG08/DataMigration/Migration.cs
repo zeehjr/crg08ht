@@ -53,6 +53,13 @@ namespace CRG08.DataMigration
             if (Utils.LengthColuna("EMPRESA", "CNPJ") == 20) return;
             Dao.Utils.ExecutaQuery("ALTER TABLE EMPRESA ALTER COLUMN CNPJ TYPE VARCHAR(20)");
         }
+
+        public static void AumentoDoTamanhoDaDescricao()
+        {
+            if (Utils.LengthColuna("CICLO", "DESCRICAO") == 100) return;
+            Dao.Utils.ExecutaQuery("ALTER TABLE CICLO ALTER COLUMN DESCRICAO TYPE VARCHAR(100)");
+        }
+
         /// <summary>
         /// Esta função executará todas as funções de migração de banco,
         /// em ordem do mais antigo ao mais recente, fazendo com que sempre haja
@@ -70,7 +77,7 @@ namespace CRG08.DataMigration
             if (ErrorHandler.GetAllErrors.Count > 0) goto Erro;
             NovaTelaComunicacao();
             if (ErrorHandler.GetAllErrors.Count > 0) goto Erro;
-
+            AumentoDoTamanhoDaDescricao();
 
             Erro:
             if (ErrorHandler.GetAllErrors.Count > 0)

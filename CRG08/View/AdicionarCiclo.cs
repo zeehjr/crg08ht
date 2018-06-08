@@ -516,5 +516,16 @@ namespace CRG08.View
             cadastro.ShowDialog(this);
             refreshEmpresas();
         }
+
+        private void btnExcluirProduto_Click(object sender, EventArgs e)
+        {
+            foreach (var item in dtgProdutos.Rows.Cast<DataGridViewRow>())
+            {
+                if ((bool) item.Cells[0].Value == true)
+                {
+                    dtgProdutos.Rows.Remove(item);
+                }
+            }
+        }
     }
 }

@@ -183,7 +183,7 @@
             this.helpProvider1.SetShowHelp(this.Finalizar, true);
             this.Finalizar.Size = new System.Drawing.Size(80, 80);
             this.Finalizar.TabIndex = 6;
-            this.Finalizar.Text = "Finalizar";
+            this.Finalizar.Text = "Enviar Finalizadas";
             this.Finalizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Finalizar.UseVisualStyleBackColor = true;
             this.Finalizar.Click += new System.EventHandler(this.Finalizar_Click);

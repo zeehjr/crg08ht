@@ -95,8 +95,8 @@ namespace CRG08.View
             foreach (var arquivo in orderedArquivos)
             {
                 if (NTrat > -1 && !arquivo.Contains("SEC" + NTrat.ToString("000"))) continue;
-                if (!Regex.IsMatch(arquivo, @"SEC\d{3}.TRT")) continue;
-                lbArquivos.Items.Add(Regex.Replace(arquivo, @"[^\\]+[^S]+[^E]+[^C]+\\(SEC\d{3}\.TRT)", "$1"));
+                if (!Regex.IsMatch(arquivo, @"SEC\d{3}.TRT", RegexOptions.IgnoreCase)) continue;
+                lbArquivos.Items.Add(Regex.Replace(arquivo, @"[^\\]+[^S]+[^E]+[^C]+\\(SEC\d{3}\.TRT)", "$1", RegexOptions.IgnoreCase));
             }
         }
 
@@ -143,7 +143,7 @@ namespace CRG08.View
             }
 
             Arquivo = arquivo;
-            var strNTrat = Regex.Replace(nomeItem, @"SEC(\d{3})\.TRT", "$1");
+            var strNTrat = Regex.Replace(nomeItem, @"SEC(\d{3})\.TRT", "$1", RegexOptions.IgnoreCase);
             NTrat = Convert.ToInt32(strNTrat);
             Crg = cbCRG.SelectedIndex + 1;
             Close();
