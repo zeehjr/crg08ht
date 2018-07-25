@@ -12,6 +12,7 @@ using CRG08.Util;
 using CRG08.View;
 using Ciclos = CRG08.VO.Ciclos;
 using LogErro = CRG08.VO.LogErro;
+using System.Diagnostics;
 
 namespace CRG08.BO
 {
@@ -67,9 +68,9 @@ namespace CRG08.BO
                 return null;
             }
 
-            var crg150 = ultimo == 22 || ultimo == 24;
-
-            var possuiProdutoFixo = ultimo == 24 || ultimo == 25;
+            var crg150 = ultimo == 22 || ultimo == 24 || ultimo == 32;
+            var novaResolucao = ultimo == 32;
+            var possuiProdutoFixo = ultimo == 24 || ultimo == 25 || ultimo == 32;
 
             int aux2 = buffer.Count - 10;
 
@@ -235,22 +236,41 @@ namespace CRG08.BO
                     for (int i = 0; i < ciclo.nl; i++)
                     {
                         LeiturasCiclo leitura = new LeiturasCiclo();
+                        // Nova resolução (ex 150,0)
+                        if (novaResolucao) {
+                            int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
+                            if (auxL < 1500) leitura.T1 = Convert.ToDouble((decimal)auxL / 10);
+                            else leitura.T1 = 150.0;
 
-                        int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
-                        if (auxL < 150) leitura.T1 = auxL;
-                        else leitura.T1 = 150;
+                            auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
+                            if (auxL < 1500) leitura.T2 = Convert.ToDouble((decimal)auxL / 10);
+                            else leitura.T2 = 150.0;
 
-                        auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
-                        if (auxL < 150) leitura.T2 = auxL;
-                        else leitura.T2 = 150;
+                            auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
+                            if (auxL < 1500) leitura.T3 = Convert.ToDouble((decimal)auxL / 10);
+                            else leitura.T3 = 150.0;
 
-                        auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
-                        if (auxL < 150) leitura.T3 = auxL;
-                        else leitura.T3 = 150;
+                            auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
+                            if (auxL < 1500) leitura.T4 = Convert.ToDouble((decimal)auxL / 10);
+                            else leitura.T4 = 150.0;
+                        // Resolução antiga (ex 150)
+                        } else { 
+                            int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
+                            if (auxL < 150) leitura.T1 = auxL;
+                            else leitura.T1 = 150;
 
-                        auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
-                        if (auxL < 150) leitura.T4 = auxL;
-                        else leitura.T4 = 150;
+                            auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
+                            if (auxL < 150) leitura.T2 = auxL;
+                            else leitura.T2 = 150;
+
+                            auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
+                            if (auxL < 150) leitura.T3 = auxL;
+                            else leitura.T3 = 150;
+
+                            auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
+                            if (auxL < 150) leitura.T4 = auxL;
+                            else leitura.T4 = 150;
+                        }
 
                         leitura.horario =
                             string.Concat((buffer[cont] / 16), (buffer[cont] % 16)) + ":" +
@@ -280,26 +300,44 @@ namespace CRG08.BO
                     for (int i = 0; i < ciclo.nlt; i++)
                     {
                         LeiturasTrat leitura = new LeiturasTrat();
+                        
+                        if (novaResolucao) {
+                            int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
+                            if (auxL < 1500) leitura.T1 = (double)auxL / 10;
+                            else leitura.T1 = 150.0;
 
-                        int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
-                        if (auxL < 150) leitura.T1 = auxL;
-                        else leitura.T1 = 150;
+                            auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
+                            if (auxL < 1500) leitura.T2 = (double)auxL / 10;
+                            else leitura.T2 = 150.0;
 
-                        auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
-                        if (auxL < 150) leitura.T2 = auxL;
-                        else leitura.T2 = 150;
+                            auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
+                            if (auxL < 1500) leitura.T3 = (double)auxL / 10;
+                            else leitura.T3 = 150.0;
 
-                        auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
-                        if (auxL < 150) leitura.T3 = auxL;
-                        else leitura.T3 = 150;
+                            auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
+                            if (auxL < 1500) leitura.T4 = (double)auxL / 10;
+                            else leitura.T4 = 150.0;
+                        } else { 
+                            int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
+                            if (auxL < 150) leitura.T1 = auxL;
+                            else leitura.T1 = 150;
 
-                        auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
-                        if (auxL < 150) leitura.T4 = auxL;
-                        else leitura.T4 = 150;
+                            auxL = ((buffer[cont + 3] % 16) * 256) + buffer[cont + 4];
+                            if (auxL < 150) leitura.T2 = auxL;
+                            else leitura.T2 = 150;
+
+                            auxL = (buffer[cont + 5] * 16) + (buffer[cont + 6] / 16);
+                            if (auxL < 150) leitura.T3 = auxL;
+                            else leitura.T3 = 150;
+
+                            auxL = ((buffer[cont + 6] % 16) * 256) + buffer[cont + 7];
+                            if (auxL < 150) leitura.T4 = auxL;
+                            else leitura.T4 = 150;
+                        }
 
                         string binario = Converters.decimalParaBinario(buffer[cont]);
-                        auxL = Converters.binarioParaDecimal(binario.Substring(1, 7));
-                        leitura.horario = string.Concat((auxL / 16), (auxL % 16)) + ":" +
+                        int auxH = Converters.binarioParaDecimal(binario.Substring(1, 7));
+                        leitura.horario = string.Concat((auxH / 16), (auxH % 16)) + ":" +
                                           string.Concat((buffer[cont + 1] / 16),
                                               (buffer[cont + 1] % 16));
                         leiturasTrat.Add(leitura);
@@ -326,7 +364,6 @@ namespace CRG08.BO
                     for (int i = 0; i < ciclo.nl; i++)
                     {
                         LeiturasCiclo leitura = new LeiturasCiclo();
-
                         int auxL = (buffer[cont + 2] * 16) + (buffer[cont + 3] / 16);
                         if (auxL < 1000) leitura.T1 = auxL / 10.0;
                         else leitura.T1 = 999 / 10.0;
@@ -967,6 +1004,11 @@ namespace CRG08.BO
                 return null;
             }
 
+            /*
+             * 150ºC: 167, 169
+             * 100ºC: 166, 168
+             */
+
             var v = listaRetorno[0];
             if (v < 166 || v > 169)
             {
@@ -974,56 +1016,81 @@ namespace CRG08.BO
                 return null;
             }
 
-            for (var i = 1; i < listaRetorno.Count() - 3; i += 10)
+            var is150 = v == 167 || v == 169;
+
+            if (is150)
             {
-                var secagem = new ItemListaSecagem();
-                secagem.Id = int.Parse((listaRetorno[i] * 256 + listaRetorno[i + 1]).ToString().Trim());
+                for (var i = 1; i < listaRetorno.Count() - 3; i += 10)
+                {
+                    var secagem = new ItemListaSecagem();
+                    secagem.Id = int.Parse((listaRetorno[i] * 256 + listaRetorno[i + 1]).ToString().Trim());
 
-                secagem.Endereco = new byte[2];
-                secagem.Endereco[0] = listaRetorno[i];
-                secagem.Endereco[1] = listaRetorno[i + 1];
+                    secagem.Endereco = new byte[2];
+                    secagem.Endereco[0] = listaRetorno[i];
+                    secagem.Endereco[1] = listaRetorno[i + 1];
 
-                secagem.NumeroLeituras = int.Parse((listaRetorno[i + 2] * 256 + listaRetorno[i + 3]).ToString().Trim());
-
-
-                var binario = Converters.decimalParaBinario(listaRetorno[i + 4]);
-                secagem.Minuto = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
-                                                 Converters.converterGeral(binario, 4, 8));
-
-                binario = Converters.decimalParaBinario(listaRetorno[i + 5]);
-                secagem.Hora = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
-                                                 Converters.converterGeral(binario, 4, 8));
-
-                binario = Converters.decimalParaBinario(listaRetorno[i + 6]);
-                secagem.Dia = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
-                                                 Converters.converterGeral(binario, 4, 8));
-
-                binario = Converters.decimalParaBinario(listaRetorno[i + 7]);
-                secagem.Mes = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
-                                                 Converters.converterGeral(binario, 4, 8));
-
-                binario = Converters.decimalParaBinario(listaRetorno[i + 8]);
-                secagem.Ano = Convert.ToInt32("20" + Converters.converterGeral(binario, 0, 4).ToString() +
-                                                 Converters.converterGeral(binario, 4, 8));
+                    secagem.NumeroLeituras = int.Parse((listaRetorno[i + 2] * 256 + listaRetorno[i + 3]).ToString().Trim());
 
 
+                    var binario = Converters.decimalParaBinario(listaRetorno[i + 4]);
+                    secagem.Minuto = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 5]);
+                    secagem.Hora = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 7]);
+                    secagem.Dia = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 8]);
+                    secagem.Mes = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 9]);
+                    secagem.Ano = Convert.ToInt32("20" + Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    retorno.Add(secagem);
+                }
+            }
+            else
+            {
+                for (var i = 1; i < listaRetorno.Count() - 3; i += 10)
+                {
+                    var secagem = new ItemListaSecagem();
+                    secagem.Id = int.Parse((listaRetorno[i] * 256 + listaRetorno[i + 1]).ToString().Trim());
+
+                    secagem.Endereco = new byte[2];
+                    secagem.Endereco[0] = listaRetorno[i];
+                    secagem.Endereco[1] = listaRetorno[i + 1];
+
+                    secagem.NumeroLeituras = int.Parse((listaRetorno[i + 2] * 256 + listaRetorno[i + 3]).ToString().Trim());
 
 
-                //binario = (Converters.decimalParaBinario(listaRetorno[i + 2]) +
-                //               (Converters.decimalParaBinario(listaRetorno[i + 3])));
-                //secagem.Ano = (int)Converters.converterGeral(binario, 0, 7);
-                //secagem.Mes = (int)Converters.converterGeral(binario, 7, 11);
-                //secagem.Dia = (int)Converters.converterGeral(binario, 11, 16);
+                    var binario = Converters.decimalParaBinario(listaRetorno[i + 4]);
+                    secagem.Minuto = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
 
-                //binario = (Converters.decimalParaBinario(listaRetorno[i + 4]) +
-                //           (Converters.decimalParaBinario(listaRetorno[i + 5])));
-                //secagem.Hora = (int) Converters.converterGeral(binario, 0, 5);
-                //secagem.Minuto = (int) Converters.converterGeral(binario, 5, 11);
-                //secagem.Segundo = (int) Converters.converterGeral(binario, 12, 16);
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 5]);
+                    secagem.Hora = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
 
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 6]);
+                    secagem.Dia = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
 
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 7]);
+                    secagem.Mes = Convert.ToInt32(Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
 
-                retorno.Add(secagem);
+                    binario = Converters.decimalParaBinario(listaRetorno[i + 8]);
+                    secagem.Ano = Convert.ToInt32("20" + Converters.converterGeral(binario, 0, 4).ToString() +
+                                                     Converters.converterGeral(binario, 4, 8));
+
+                    retorno.Add(secagem);
+                }
             }
 
             return retorno;
